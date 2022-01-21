@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<h1>JUEGO DE ADIVINACIÓN</h1>
+
+<script>
+	
+	function saltarlinea() {
+		var saltolinea = "<br>" + "<br>" + "<br>" + "<hr>" +"<br>" + "<br>";
+		document.write(saltolinea);
+	}
+
+	function imprimir(frase) {
+
+		document.write("<big>" + frase + "</big>");
+		saltarlinea();
+	}
+
+	function sorteo(n){
+		return Math.round(Math.random()*n);
+	}
+
+	var nroLimite = parseInt(prompt("Ingrese el límite de nros: "));
+	var nroPensado = sorteo(nroLimite);
+	var nroLanzado = parseInt(prompt("Ingrese un nro entre 0 - " + nroLimite));
+
+	if (nroPensado == nroLanzado) {
+		imprimir("BINGO!");
+	}
+	else {
+		if (nroLanzado > nroPensado) {
+			imprimir("ERROR! El nro pensado era menor que tu nro!");
+		} else {
+			imprimir("ERROR! El nro pensado era mayor que tu nro!");
+		}
+		
+	}
+	
+</script>
+

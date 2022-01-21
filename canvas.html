@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+
+<h1>CANVAS</h1>
+
+<canvas width="800" height="600">
+</canvas>    
+
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "lightblue";
+    pincel.fillRect(0, 0, 800, 200);
+    pincel.fillRect(0, 400, 800, 200);
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.arc(400,300,100,0,2*3.14);
+    pincel.fill();
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(400,100);
+    pincel.lineTo(350,250);
+    pincel.lineTo(450,250);
+    pincel.fill();
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(575,174);
+    pincel.lineTo(400,250);
+    pincel.lineTo(450,350);
+    pincel.fill();
+
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(575,425);
+    pincel.lineTo(450,250);
+    pincel.lineTo(350,350);
+    pincel.fill();
+
+      pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(400,500);
+    pincel.lineTo(350,350);
+    pincel.lineTo(450,350);
+    pincel.fill();
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(225,425);
+    pincel.lineTo(350,250);
+    pincel.lineTo(450,350);
+    pincel.fill();
+
+
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(225,175);
+    pincel.lineTo(450,250);
+    pincel.lineTo(350,350);
+    pincel.fill();
+
+
+
+ </script>

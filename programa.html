@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA</h1>
+
+<script>
+	
+	function saltarlinea() {
+		var saltolinea = "<br>" + "<br>" + "<br>" + "<hr>" +"<br>" + "<br>";
+		document.write(saltolinea);
+	}
+
+	function imprimir(frase) {
+
+		document.write("<big>" + frase + "</big>");
+		saltarlinea();
+	}
+
+	imprimir("Hola amigos!");
+
+
+	// Este codigo calcula las edades de las personas
+
+	var year = 2022;
+
+	imprimir("Juan tiene: " + (year-2000) + " años");
+	
+	imprimir("Pau tiene: " + (year-1998) + " años");
+	
+	year = 2010;
+
+	imprimir("Carlos tiene: " + (year-2005) + " años");
+	
+	year = 2022;
+	imprimir("Gimena tiene: " + (year-2005) + " años");
+	
+	// Este codigo calcula el promedio de edades de las mujeres
+
+	var edadPau = 24;
+	var edadGimena = 17;
+	var name1 = "Pau";
+	var name2 = "Gimena"
+	var promedio = (edadGimena+edadPau)/2;
+	imprimir("El promedio de las edades de " + name1 + " y "+ name2 + " es: " + Math.round(promedio));
+</script>
+

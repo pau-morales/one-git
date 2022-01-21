@@ -1,0 +1,21 @@
+<body>
+    <textarea id="cuerpo-mensaje" cols="40" rows="5"></textarea>
+    <p>Caracteres: <span id="numero-caracteres">0</span> caracteres.</p>
+    <script src="contador.js"></script>
+</body>
+
+<script type="text/javascript">
+    // función contador.js
+    function actualizarCaracteres() {
+        var mensaje = document.querySelector("#cuerpo-mensaje").value;
+        var caracteres = mensaje.length;
+
+        var contador = document.querySelector("#numero-caracteres");
+        contador.innerHTML = caracteres;
+    }
+    var campoMensaje = document.querySelector("#cuerpo-mensaje");
+    campoMensaje.addEventListener("input", atualizarCaracteres);
+
+</script>
+
+
